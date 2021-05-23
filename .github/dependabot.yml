@@ -9,12 +9,21 @@ updates:
       - "github_actions"
       - "dependencies"
   - package-ecosystem: "github-actions"
-    directory: "/templates"
+    directory: "/templates/service"
     schedule:
       interval: "daily"
     labels:
       - "impact/no-changelog-required"
       - "github_actions"
       - "dependencies"
-      - "templates"
+      - "templates/service"
+  - package-ecosystem: "github-actions"
+    directory: "/templates/infra"
+    schedule:
+      interval: "daily"
+    labels:
+      - "impact/no-changelog-required"
+      - "github_actions"
+      - "dependencies"
+      - "templates/infra"
     
