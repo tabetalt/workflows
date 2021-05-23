@@ -26,7 +26,7 @@ jobs:
           github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
 
       - uses: bjerkio/kopier@main
-        if: steps.changes.outputs.infra == 'true'
+        if: steps.changes.outputs.service == 'true'
         with:
           github-search: org:tabetalt topic:service
           github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
