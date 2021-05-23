@@ -33,4 +33,5 @@ jobs:
           github-search: org:tabetalt topic:service
           files: templates/service/**
           github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
+          base-path: templates/service
 
