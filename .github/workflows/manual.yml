@@ -20,5 +20,5 @@ jobs:
         with:
           github-search: org:tabetalt topic:service
           github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
-          base-path: templates/service/**
+          base-path: templates/service/
 
