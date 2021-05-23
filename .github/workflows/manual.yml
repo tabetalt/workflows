@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - uses: bjerkio/kopier@main
+        with:
+          github-search: org:tabetalt topic:infra -repo:tabetalt/infra-core
+          github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
+
+      - uses: bjerkio/kopier@main
+        with:
+          github-search: org:tabetalt topic:service
+          github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
+
