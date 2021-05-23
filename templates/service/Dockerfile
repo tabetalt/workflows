@@ -2,12 +2,9 @@ FROM node:14-alpine as build
 
 WORKDIR /usr/src/app
 
-ARG NPM_TOKEN
-
 COPY package*.json yarn.lock ./
 
 RUN yarn install
-RUN rm -f .npmrc
 
 COPY . .
 

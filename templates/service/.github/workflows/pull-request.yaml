@@ -32,6 +32,10 @@ jobs:
           filters: |
             src:
               - 'src/**'
+              - 'Dockerfile'
+              - 'package.json'
+              - 'tsconfig.json'
+              - 'yarn.lock'
     outputs:
       has-changed: steps.changes.outputs.src
 
