@@ -33,7 +33,7 @@ jobs:
             src:
               - 'src/**'
     outputs:
-      has-changed: steps.changes.outputs.dist
+      has-changed: steps.changes.outputs.src
 
   docker:
     name: Build Docker
