@@ -30,8 +30,8 @@ jobs:
       - uses: bjerkio/kopier@main
         if: steps.changes.outputs.service == 'true'
         with:
-          github-search: org:tabetalt topic:service
+          query: org:tabetalt topic:service
           base-path: templates/service/
           github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
-          branch: automated-kopier
+          head: automated-kopier
 

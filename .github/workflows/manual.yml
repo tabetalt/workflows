@@ -18,8 +18,8 @@ jobs:
 
       - uses: bjerkio/kopier@main
         with:
-          github-search: org:tabetalt topic:service
-          github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
+          query: org:tabetalt topic:service
           base-path: templates/service/
-          branch: automated-kopier
+          github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
+          head: automated-kopier
 
