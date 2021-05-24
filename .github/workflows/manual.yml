@@ -16,7 +16,7 @@ jobs:
       #     base-path: templates/infra/
       #     github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
 
-      - uses: bjerkio/kopier@debug-originfiles
+      - uses: bjerkio/kopier@main
         with:
           query: org:tabetalt topic:service
           base-path: templates/service/
