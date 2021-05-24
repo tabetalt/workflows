@@ -20,6 +20,6 @@ jobs:
         with:
           query: org:tabetalt topic:service
           base-path: templates/service/
-          github-token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
+          token: ${{ secrets.PAYTRON_GITHUB_TOKEN }}
           head: automated-kopier
 
